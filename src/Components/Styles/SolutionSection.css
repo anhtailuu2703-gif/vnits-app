@@ -1,0 +1,175 @@
+.it-section {
+  padding: 120px 0;
+  background: radial-gradient(1200px 600px at 20% 10%,
+      rgba(59, 130, 246, 0.15),
+      transparent),
+    linear-gradient(180deg, #020617, #020617);
+  color: #fff;
+}
+
+.it-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* HEADER */
+.it-header {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 80px;
+}
+
+.it-header h2 {
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 20px;
+}
+
+.it-header h2 span {
+  background: linear-gradient(90deg, #3b82f6, #6366f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.it-header p {
+  font-size: 16px;
+  color: #94a3b8;
+}
+
+/* IMAGE */
+.it-image img {
+  width: 100%;
+  border-radius: 24px;
+  object-fit: cover;
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.4);
+}
+
+.it-image img:hover {
+  transform: scale(1.02);
+  transition: 0.3s;
+}
+
+/* TEXT */
+.it-title {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.it-icon {
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(135deg, #3b82f6, #6366f1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.it-icon:hover {
+  transform: rotate(10deg);
+  transition: 0.3s;
+  font-size: 3rem;
+}
+
+.it-text h3 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.it-desc {
+  color: #cbd5f5;
+  margin-bottom: 24px;
+  line-height: 1.7;
+}
+
+.it-list {
+  list-style: none;
+  padding: 0;
+}
+
+.it-list li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.it-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 6px;
+  height: 6px;
+  background: #3b82f6;
+  border-radius: 50%;
+}
+
+.learn-more-link {
+  color: oklch(70.7% .165 254.624);
+  text-decoration: none;
+  font-family: 'Inter';
+}
+
+.learn-more-link:hover {
+  margin-left: 20px;
+  transition: 1s;
+}
+
+.it-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+/* ĐẢO CỘT */
+.it-content.reverse {
+  direction: rtl;
+}
+
+.it-content.reverse > * {
+  direction: ltr;
+}
+
+/* MOBILE: 1 CỘT */
+@media (max-width: 768px) {
+  .it-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .it-content.reverse {
+    direction: ltr;
+  }
+}
+
+/* Mobile 1 cột */
+@media (max-width: 768px) {
+  .it-row {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .it-row {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .it-header h2 {
+    font-size: 30px;
+  }
+
+  .it-content {
+    grid-template-columns: 1fr;
+  }
+}

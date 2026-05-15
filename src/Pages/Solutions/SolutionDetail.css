@@ -1,0 +1,115 @@
+/* solution-detail.css */
+
+.solution-section {
+  padding: 140px 0;
+  background: radial-gradient(
+      1200px 600px at 20% 10%,
+      rgba(59, 130, 246, 0.15),
+      transparent
+    ),
+    #020617;
+  color: #fff;
+}
+
+.solution-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 80px;
+
+  /* ⚠️ CỰC QUAN TRỌNG */
+  align-items: flex-start;
+}
+
+/* LEFT */
+.solution-overview {
+  color: #cbd5f5;
+  margin: 16px 0 48px;
+  line-height: 1.7;
+}
+
+.solution-subtitle {
+  margin-bottom: 24px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.feature-card {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  gap: 14px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  margin-top: 6px;
+  border-radius: 50%;
+  background: #3b82f6;
+}
+
+/* RIGHT – STICKY CHUẨN */
+.solution-right {
+  position: relative;
+}
+
+.benefit-box {
+  position: sticky;
+  top: 120px; /* chỉ sticky trong section */
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 24px;
+  padding: 32px;
+}
+
+.benefit-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0;
+}
+
+.benefit-box li {
+  margin-bottom: 14px;
+  padding-left: 18px;
+  position: relative;
+}
+
+.benefit-box li::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: #3b82f6;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 9px;
+}
+
+.cta-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 14px;
+  border: none;
+  background: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .solution-container {
+    grid-template-columns: 1fr;
+  }
+
+  .benefit-box {
+    position: static;
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,268 @@
+:root {
+    --header-height: 80px;
+}
+
+/* ===== HERO FULL ===== */
+.hero {
+    position: relative;
+    height: 100dvh;
+    min-height: 100vh;
+
+    padding-top: var(--header-height);
+
+    display: flex;
+    align-items: center;
+
+    background: url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop") center/cover no-repeat;
+    color: #fff;
+    overflow: hidden;
+}
+
+/* overlay */
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right,
+            rgba(5, 10, 20, 0.9),
+            rgba(5, 10, 20, 0.6));
+    z-index: 1;
+}
+
+/* container */
+.hero-container {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+    padding: 40px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+/* ===== LEFT ===== */
+.hero-left {
+    max-width: 600px;
+}
+
+/* badge */
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 6px 14px;
+    border-radius: 20px;
+
+    background: rgba(0, 132, 255, 0.15);
+    color: #4da3ff;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.badge .dot {
+    width: 8px;
+    height: 8px;
+    background: #4da3ff;
+    border-radius: 50%;
+}
+
+/* title */
+.hero h1 {
+    font-size: 58px;
+    font-weight: 800;
+    line-height: 1.15;
+}
+
+.hero h1 span {
+    background: linear-gradient(90deg, #4da3ff, #7b5cff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* desc */
+.hero p {
+    margin-top: 20px;
+    color: #bbb;
+    line-height: 1.6;
+}
+
+/* buttons */
+.hero-buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 14px 22px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.btn.primary {
+    background: #fff;
+    color: #000;
+}
+
+.btn.primary:hover {
+    transform: translateY(-2px);
+}
+
+.btn.outline {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: transparent;
+    color: #fff;
+}
+
+.btn.outline:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* ===== RIGHT ===== */
+.hero-right {
+    position: relative;
+}
+
+/* card */
+.hero-card {
+    width: 340px;
+    background: rgba(20, 25, 40, 0.8);
+    backdrop-filter: blur(14px);
+    padding: 25px;
+    border-radius: 20px;
+    z-index: 99999;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* header */
+.hero-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.hero-card h3 {
+    color: #4da3ff;
+}
+
+.star {
+    color: gold;
+}
+
+/* item */
+.item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 18px;
+    align-items: center;
+}
+
+.item h4 {
+    margin: 0;
+}
+
+.item p {
+    margin: 4px 0 0;
+    font-size: 14px;
+}
+
+/* icon */
+.icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon.blue {
+    background: linear-gradient(135deg, #3b82f6, #06b6d4);
+}
+
+.icon.pink {
+    background: linear-gradient(135deg, #ec4899, #8b5cf6);
+}
+
+.icon.green {
+    background: linear-gradient(135deg, #10b981, #22c55e);
+}
+
+/* uptime badge */
+.uptime {
+    position: absolute;
+    right: -60px;
+    top: 80px;
+
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    padding: 10px 14px;
+    border-radius: 12px;
+
+    background: rgba(20, 25, 40, 0.8);
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    animation: floatUpDown 3s ease-in-out infinite;
+
+}
+
+.uptime .dot.green {
+    width: 10px;
+    height: 10px;
+    background: #22c55e;
+    border-radius: 50%;
+}
+
+.text-yellow-400 {
+    color: #fdc700;
+    fill: #fdc700;
+}
+
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px); /* 👈 bay lên */
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero-right {
+        width: 100%;
+    }
+
+    .hero-card {
+        width: 100%;
+    }
+
+    .uptime {
+        position: static;
+        margin-top: 15px;
+        justify-content: center;
+    }
+}

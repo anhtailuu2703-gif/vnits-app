@@ -1,0 +1,164 @@
+/* solution-content.css */
+
+.solution-content {
+  padding: 120px 0;
+  background: #020617;
+  color: #fff;
+}
+
+.solution-content-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+
+  display: grid;
+  grid-template-columns: 1.4fr 0.6fr;
+  gap: 60px;
+  align-items: start; /* quan trọng */
+}
+
+/* LEFT */
+.solution-left h2 {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.solution-overview {
+  color: #cbd5f5;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+.solution-subtitle {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+/* Feature cards */
+.solution-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.feature-card {
+   background: rgba(255,255,255,0.04);
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  border: 1px solid transparent;
+  transition: 0.3s;
+}
+
+.feature-check {
+  min-width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #3b82f6;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+}
+
+/* RIGHT – STICKY TRONG PHẠM VI */
+.solution-right {
+  position: sticky;
+  top: 120px; /* không đụng header */
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 20px;
+  padding: 28px;
+}
+
+/* Benefits */
+.solution-right h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.solution-benefits {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.solution-benefits li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 14px;
+  color: #feffff;
+}
+
+.solution-benefits li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 6px;
+  height: 6px;
+  background: #3b82f6;
+  border-radius: 50%;
+}
+
+/* BORDER NGĂN GIỮA */
+.solution-divider {
+  margin: 28px 0;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* CONSULT */
+.solution-consult h4 {
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  color: #94a3b8;
+  margin-bottom: 16px;
+}
+
+.solution-cta {
+  width: 100%;
+  padding: 14px 20px;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #3b82f6, #6366f1);
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.solution-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(99,102,241,0.4);
+  transition: 0.3s;
+}
+
+.slug-security .feature-card {
+  border-color: rgba(16,185,129,0.4);
+}
+
+.slug-security .feature-check {
+  background: #10b981;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .solution-content-container {
+    grid-template-columns: 1fr;
+  }
+
+  .solution-right {
+    position: relative;
+    top: unset;
+    margin-top: 60px;
+  }
+
+  .solution-features {
+    grid-template-columns: 1fr;
+  }
+}
