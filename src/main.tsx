@@ -7,7 +7,7 @@ import { MotionConfig } from 'framer-motion'
 
 createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <HashRouter >
+    <HashRouter basename="/vnits-app">
       <MotionConfig transition={{ duration: 0.5, ease: "easeInOut" }}>
         <App />
       </MotionConfig>
