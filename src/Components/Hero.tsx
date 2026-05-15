@@ -2,6 +2,7 @@ import React from "react";
 import "./Styles/Hero.css";
 import { motion } from "framer-motion";
 import { fadeLeft, fadeRight } from "./data/animation";
+import { Link } from "react-router-dom";
 
 const Hero: React.FC = () => {
     return (
@@ -35,9 +36,9 @@ const Hero: React.FC = () => {
                         </p>
 
                         <div className="hero-buttons">
-                            <a className="btn primary" href="#system">
+                            <Link className="btn primary" to="#system">
                                 Khám phá hệ thống →
-                            </a>
+                            </Link>
                             <a className="btn outline">
                                 Xem hồ sơ năng lực
                             </a>
