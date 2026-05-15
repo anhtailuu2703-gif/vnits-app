@@ -10,7 +10,7 @@ import ContactPage from './Pages/ContactPage/ContactPage';
 
 function App() {
   return (
-    <HashRouter basename="/vnits-app">
+    <>
       <ScrollToTop />
       <Routes>
         <Route element={<Layout />}>
@@ -24,7 +24,7 @@ function App() {
           <Route path='*' element={<Home />} />
         </Route>
       </Routes>
-    </HashRouter>
+    </>
   )
 }
 
