@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom'
+import { HashRouter, Route, Routes } from 'react-router-dom'
 import Layout from './Layout/layout'
 import Home from './Pages/Home'
 import SolutionDetail from './Pages/Solutions/SolutionDetail'
@@ -10,7 +10,7 @@ import ContactPage from './Pages/ContactPage/ContactPage';
 
 function App() {
   return (
-    <>
+    <HashRouter basename="/vnits-app">
       <ScrollToTop />
       <Routes>
         <Route element={<Layout />}>
@@ -24,7 +24,7 @@ function App() {
           <Route path='*' element={<Home />} />
         </Route>
       </Routes>
-    </>
+    </HashRouter>
   )
 }
 
