@@ -36,12 +36,12 @@ const Hero: React.FC = () => {
                         </p>
 
                         <div className="hero-buttons">
-                            <Link className="btn primary" to="#system">
+                            <a className="btn primary" href="#system">
                                 Khám phá hệ thống →
-                            </Link>
-                            <a className="btn outline">
-                                Xem hồ sơ năng lực
                             </a>
+                            <Link className="btn outline" to="/projects">
+                                Xem hồ sơ năng lực
+                            </Link>
                         </div>
                     </div>
                 </motion.div>
