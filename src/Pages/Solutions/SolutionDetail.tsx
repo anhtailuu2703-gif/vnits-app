@@ -5,26 +5,27 @@ import SolutionHeader from "../../Components/SolutionHeader";
 import SolutionContent from "../../Components/SolutionContent";
 
 export default function SolutionDetail() {
-  const { slug } = useParams();
-  const solution = solutionsData.find((i) => i.slug === slug);
+    const { slug } = useParams();
+    const solution = solutionsData.find((i) => i.slug === slug);
 
-  if (!solution) return null;
+    if (!solution) return null;
 
-  return (
-    <>
-      {/* HEADER */}
-      <SolutionHeader
-        title={solution.title}
-        desc={solution.desc}
-        bg={solution.image}
-      />
+    return (
+        <>
+            {/* HEADER */}
+            <SolutionHeader
+                title={solution.title}
+                desc={solution.desc}
+                bg={solution.image}
+            />
 
-      <SolutionContent
-        title={solution.titledesc}
-        overview={solution.overview}
-        features={solution.features}
-        benefits={solution.benefits}
-      />
-    </>
-  );
+            <SolutionContent
+                slug={solution.slug}
+                title={solution.title}
+                overview={solution.overview}
+                features={solution.features}
+                benefits={solution.benefits}
+            />
+        </>
+    );
 }

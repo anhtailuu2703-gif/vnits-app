@@ -2,7 +2,6 @@ import { useState } from "react";
 import emailjs from "emailjs-com";
 import toast, { Toaster } from "react-hot-toast";
 import "./ContactPage.css";
-import { section } from "framer-motion/m";
 
 type FormType = {
     name: string;
@@ -147,7 +146,11 @@ export default function ContactPage() {
                                 height="24"
                                 viewBox="0 0 24 24"
                                 fill="none"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-send w-5 h-5 group-hover:translate-x-1 transition-transform" aria-hidden="true"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path><path d="m21.854 2.147-10.94 10.939"></path></svg>
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                className="lucide lucide-send w-5 h-5 group-hover:translate-x-1 transition-transform" aria-hidden="true"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path><path d="m21.854 2.147-10.94 10.939"></path></svg>
                             {loading ? "Đang gửi..." : "Gửi yêu cầu tư vấn"}
                         </button>
                     </form>

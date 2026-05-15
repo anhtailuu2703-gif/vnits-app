@@ -1,6 +1,4 @@
-import { motion } from "framer-motion";
 import "./PartnerPage.css";
-import { fadeUp } from "../../Components/data/animation";
 
 const data = [
   {

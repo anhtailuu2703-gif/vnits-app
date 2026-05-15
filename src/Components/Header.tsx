@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Styles/Header.css";
 import LogoItem from "../assets/vnits_logo.png"
-import { href, Link } from "react-router";
+import { Link } from "react-router";
 
 const Header: React.FC = () => {
   const [open, setOpen] = useState(false);
