@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Styles/solution-content.css";
 
 interface Props {
@@ -47,9 +48,9 @@ export default function SolutionContent({
 
                     <div className="solution-consult">
                         <h4>CẦN TƯ VẤN SÂU PHÂN HỆ NÀY?</h4>
-                        <button className="solution-cta" onClick={() => (window.location.href = "/contact")}>
+                        <Link className="solution-cta" to="/contact">
                             Liên hệ Chuyên gia
-                        </button>
+                        </Link>
                     </div>
                 </aside>
             </div>
