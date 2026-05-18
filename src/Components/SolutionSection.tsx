@@ -44,7 +44,7 @@ export default function SolutionSection() {
                         <div className="it-text">
                             <div className="it-title">
                                 <div className="it-icon">
-                                    <Icon />
+                                    <Icon key={item.icon} />
                                 </div>
                                 <h3>{item.title}</h3>
                             </div>
