@@ -1,5 +1,6 @@
 import "./Styles/Footer.css";
 import Logoitem from "../assets/vnits_logo.png"
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -39,13 +40,13 @@ export default function Footer() {
             <h4>Giải pháp</h4>
 
             <ul>
-              <li>Hạ tầng CNTT</li>
-              <li>Hệ thống CCTV</li>
-              <li>Access Control</li>
-              <li>Video Door Phone</li>
-              <li>Car Parking</li>
-              <li>Hệ thống âm thanh thông báo (PA)</li>
-              <li>Hệ thống Âm thanh ánh sáng (Audio Visual)</li>
+              <li><Link to="/system/it-infrastructure">Hạ tầng CNTT</Link></li>
+              <li><Link to="/system/cctv">Hệ thống CCTV</Link></li>
+              <li><Link to="/system/access-control">Access Control</Link></li>
+              <li><Link to="/system/video-door-phone">Video Door Phone</Link></li>
+              <li><Link to="/system/car-parking">Car Parking</Link></li>
+              <li><Link to="/system/PA-system">Hệ thống âm thanh thông báo (PA)</Link></li>
+              <li><Link to="/system/audio-visual">Hệ thống Âm thanh ánh sáng (Audio Visual)</Link></li>
             </ul>
           </div>
 
