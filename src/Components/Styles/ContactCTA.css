@@ -103,7 +103,21 @@
   flex-wrap: wrap;
 }
 
-.cta-buttons button {
+.cta-buttons .btn-primary {
+  height: 62px;
+  padding: 0 34px;
+  border-radius: 14px;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.cta-buttons .btn-secondary {
   height: 62px;
   padding: 0 34px;
   border-radius: 14px;

@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { fadeUp } from "./data/animation";
 import "./Styles/ContactCTA.css";
 import { Eye, Send } from "lucide-react";
+import { Link } from "react-router";
 
 export default function ContactCTA() {
   return (
@@ -23,15 +24,15 @@ export default function ContactCTA() {
         </p>
 
         <div className="cta-buttons">
-          <button className="btn-primary">
+          <Link to={"/contact"} className="btn-primary" style={{textDecoration:"none"}}>
             <Send size={17} />
             Nhận Tư Vấn Miễn Phí
-          </button>
+          </Link>
 
-          <button className="btn-secondary" onClick={() => (window.location.href = "/projects")}>
+          <Link className="btn-secondary" to={"/projects"} style={{textDecoration:"none"}}>
             <Eye size={17} />
             Xem Dự Án
-          </button>
+          </Link>
         </div>
       </div>
     </motion.section>

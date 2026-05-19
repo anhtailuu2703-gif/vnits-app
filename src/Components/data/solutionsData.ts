@@ -185,7 +185,7 @@ const solutionsData: Solution[] = [
     desc: "Hệ thống âm thanh thông báo (PA) cho phép phát âm thanh đến các khu vực khác nhau trong tòa nhà hoặc khu vực rộng.",
     image:
       "https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?q=80&w=1000&auto=format&fit=crop",
-    icon: "speaker",
+    icon: "siren",
     items: [
       "Phân vùng âm thanh linh hoạt",
       "Phát nhạc nền tự động theo lịch",
@@ -215,7 +215,7 @@ const solutionsData: Solution[] = [
     desc: "Hệ thống âm thanh và ánh sáng chuyên dụng cho các sự kiện, hội nghị và không gian công cộng.",
     image:
       "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=1000&auto=format&fit=crop",
-    icon: "siren",
+    icon: "speaker",
     items: [
       "Hệ thống loa Line Array công suất lớn",
       "Màn hình hiển thị LED ghép tấm, Projector",
@@ -225,97 +225,5 @@ const solutionsData: Solution[] = [
       "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=1000&auto=format&fit=crop",
   },
 ];
-
-// const solutions = [
-
-//   {
-//     title: "Hạ tầng CNTT",
-//     slug:"ha-tang-cntt",
-//     image:
-//       "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1000&auto=format&fit=crop",
-//     icon: "network" as IconKey,
-//     desc: "Giải pháp mạng nội bộ, máy chủ và hệ thống lưu trữ toàn diện, tối ưu hóa hiệu suất cho doanh nghiệp.",
-//     items: [
-//       "Thiết kế mạng LAN/WAN tiêu chuẩn doanh nghiệp",
-//       "Hệ thống Wi-Fi diện rộng, roaming mượt mà",
-//       "Giải pháp máy chủ và lưu trữ (SAN/NAS)",
-//     ],
-//   },
-
-//   {
-//     title: "Hệ thống CCTV",
-//     image:
-//       "https://images.unsplash.com/photo-1557597774-9d273605dfa9?q=80&w=1000&auto=format&fit=crop",
-//     icon: "camera" as IconKey,
-//     desc: "Giám sát an ninh 24/7 với camera AI độ nét cao, nhận diện khuôn mặt và cảnh báo xâm nhập thời gian thực.",
-//     items: [
-//       "Camera IP chất lượng cao (4K, PTZ)",
-//       "Tích hợp AI nhận diện khuôn mặt và biển số",
-//       "Phát hiện xâm nhập và cảnh báo sớm",
-//     ],
-//   },
-
-//   {
-//     title: "Access Control",
-//     image:
-//       "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1000&auto=format&fit=crop",
-//     icon: "security" as IconKey,
-//     desc: "Kiểm soát vào ra thông minh bằng sinh trắc học, thẻ từ và ứng dụng điện thoại.",
-//     items: [
-//       "Nhận diện khuôn mặt/Sinh trắc học tốc độ cao",
-//       "Tích hợp với hệ thống chấm công",
-//       "Quản lý khách truy cập",
-//     ],
-//   },
-
-//   {
-//     title: "Video Door Phone",
-//     image:
-//       "https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=1000&auto=format&fit=crop",
-//     icon: "video" as IconKey,
-//     desc: "Hệ thống chuông cửa màn hình thông minh, kết nối trực tiếp với căn hộ và trung tâm điều hành.",
-//     items: [
-//       "Màn hình cảm ứng độ phân giải cao",
-//       "Đàm thoại video hai chiều rõ nét",
-//       "Mở khóa từ xa qua ứng dụng",
-//     ],
-//   },
-//   {
-//     title: "Car Parking",
-//     image:
-//       "https://images.unsplash.com/photo-1573348722427-f1d6819fdf98?q=80&w=1000&auto=format&fit=crop",
-//     icon: "car" as IconKey,
-//     desc: "Quản lý bãi đỗ xe tự động, nhận diện biển số (ALPR) và hướng dẫn vị trí đỗ thông minh.",
-//     items: [
-//       "Nhận diện biển số tự động (ALPR)",
-//       "Thanh toán điện tử hạn chế tiền mặt",
-//       "Hệ thống thu phí tự động (ETC)",
-//     ],
-//   },
-//   {
-//     title: "Hệ thống âm thanh thông báo (PA)",
-//     image:
-//       "https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?q=80&w=1000&auto=format&fit=crop",
-//     icon: "🔊" as IconKey,
-//     desc: "Hệ thống âm thanh thông báo (PA) giúp truyền tải thông tin nhanh chóng và hiệu quả trong các không gian công cộng.",
-//     items: [
-//       "Phân vùng âm thanh linh hoạt",
-//       "Phát nhạc nền tự động theo lịch",
-//       "Tích hợp chặt chẽ với hệ thống báo cháy",
-//     ],
-//   },
-//   {
-//     title: "Hệ thống Âm thanh ánh sáng (Audio Visual)",
-//     image:
-//       "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=1000&auto=format&fit=crop",
-//     icon: "🎥" as IconKey,
-//     desc: "Giải pháp âm thanh hội trường, hiển thị hình ảnh, phòng họp trực tuyến và ánh sáng sân khấu chuyên nghiệp.",
-//     items: [
-//       "Hệ thống loa Line Array công suất lớn",
-//       "Màn hình hiển thị LED ghép tấm, Projector",
-//       "Tích hợp chặt chẽ với hệ thống báo cháy",
-//     ],
-//   },
-// ];
 
 export default solutionsData;

@@ -37,7 +37,7 @@ const Header: React.FC = () => {
 
         {/* CTA */}
         <div className="actions">
-          <Link className="cta" to="/contact">
+          <Link className="cta" to="/contact" style={{textDecoration:"none"}}>
             Liên hệ ngay
           </Link>
           <div className="menu-toggle" onClick={() => setOpen(!open)}>
