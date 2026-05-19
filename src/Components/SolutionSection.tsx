@@ -27,8 +27,7 @@ export default function SolutionSection() {
                 {/* CONTENT */}
 
                 {solutionItem.map((item, index) => {
-                    // index into iconMap with a dynamic key — cast to allow string keys
-                    const Icon = (iconMap as Record<string, any>)[item.icon] || (() => null);
+                    const Icon = iconMap[item.icon];
 
                     return (
                         <motion.div

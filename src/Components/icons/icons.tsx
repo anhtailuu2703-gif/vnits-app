@@ -6,7 +6,7 @@ import {
   Car,
   Speaker,
   Video,
-  Soup
+  Siren
 } from "lucide-react";
 
 export const iconMap = {
@@ -16,5 +16,5 @@ export const iconMap = {
   car: Car,
   speaker: Speaker,
   video: Video,
-  siren: Soup, 
+  siren: Siren,
 };

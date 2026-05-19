@@ -11,7 +11,9 @@ const Header: React.FC = () => {
       <div className="container">
         {/* Logo */}
         <div className="logo">
-          <img src={LogoItem} alt="VNITS Logo" className="logo-icon" />
+          <Link to="/">
+            <img src={LogoItem} alt="VNITS Logo" className="logo-icon" />
+          </Link>
         </div>
 
         {/* Menu */}

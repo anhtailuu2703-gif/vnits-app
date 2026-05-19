@@ -61,6 +61,17 @@
   line-height: 1.7;
 }
 
+.solution-header-icon {
+  width: 48px;
+  height: 48px;
+  background: rgba(57, 145, 246, 0.711);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
 /* MOBILE */
 @media (max-width: 768px) {
   .solution-header {

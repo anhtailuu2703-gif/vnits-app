@@ -1,13 +1,16 @@
 // components/SolutionHeader.tsx
+import { iconMap } from "./icons/icons";
 import "./Styles/SolutionHeader.css";
 
 interface Props {
     title: string;
     desc: string;
     bg: string;
+    icon?: string;
 }
 
-export default function SolutionHeader({ title, desc, bg }: Props) {
+export default function SolutionHeader({ title, desc, bg, icon }: Props) {
+    const Icon = icon ? iconMap[icon as keyof typeof iconMap] : null;
     return (
         <section
             className="solution-header"
@@ -25,7 +28,11 @@ export default function SolutionHeader({ title, desc, bg }: Props) {
                         </svg>
                         TRỞ VỀ DANH SÁCH
                     </a>
-                    
+                    {Icon && (
+                        <div className="solution-header-icon">
+                            <Icon size={22}/>
+                        </div>
+                    )}
                     <h1>{title}</h1>
                     <p>{desc}</p>
                 </div>

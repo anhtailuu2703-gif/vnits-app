@@ -14,6 +14,7 @@ export default function SolutionDetail() {
         <>
             {/* HEADER */}
             <SolutionHeader
+                icon={solution.icon}
                 title={solution.title}
                 desc={solution.desc}
                 bg={solution.image}
