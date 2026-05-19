@@ -1,11 +1,20 @@
-import NetworkIcon from "./NetworkIcon";
-import CameraIcon from "./CameraIcon";
-import ShieldIcon from "./ShieldIcon";
+// iconMap.ts
+import {
+  Server,
+  Camera,
+  Shield,
+  Car,
+  Speaker,
+  Video,
+  Soup
+} from "lucide-react";
 
-export const ICONS = {
-  network: NetworkIcon,
-  camera: CameraIcon,
-  security: ShieldIcon,
+export const iconMap = {
+  server: Server,
+  camera: Camera,
+  shield: Shield,
+  car: Car,
+  speaker: Speaker,
+  video: Video,
+  siren: Soup, 
 };
-
-export type IconKey = keyof typeof ICONS;

@@ -22,9 +22,9 @@ export default function SolutionDetail() {
             <SolutionContent
                 slug={solution.slug}
                 title={solution.title}
-                overview={solution.overview}
-                features={solution.features}
-                benefits={solution.benefits}
+                overview={solution.overview ?? ""}
+                features={solution.features ?? []}
+                benefits={solution.benefits ?? []}
             />
         </>
     );
