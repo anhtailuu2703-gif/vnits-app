@@ -48,7 +48,7 @@ export default function SolutionContent({
 
                     <div className="solution-consult">
                         <h4>CẦN TƯ VẤN SÂU PHÂN HỆ NÀY?</h4>
-                        <Link className="solution-cta" to="/contact">
+                        <Link className="solution-cta" to="/contact" style={{textDecoration: "none"}}>
                             Liên hệ Chuyên gia
                         </Link>
                     </div>

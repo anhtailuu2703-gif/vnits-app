@@ -139,7 +139,7 @@ export default function ContactPage() {
                             onChange={(v) => setForm({ ...form, message: v })}
                         />
 
-                        <button type="submit" disabled={loading}>
+                        <button type="submit" className="btn" disabled={loading}>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="24"
