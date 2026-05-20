@@ -57,6 +57,7 @@ const Hero: React.FC = () => {
                                 <h3>GIÁ TRỊ CỐT LÕI</h3>
                                 <span className="star">
                                     <svg
+                                        style={{color: "yellow"}}
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="24"
                                         height="24"
