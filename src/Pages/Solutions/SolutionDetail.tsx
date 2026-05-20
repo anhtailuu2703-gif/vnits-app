@@ -22,7 +22,7 @@ export default function SolutionDetail() {
 
             <SolutionContent
                 slug={solution.slug}
-                title={solution.title}
+                titleDesc={solution.titledesc ?? ""}
                 overview={solution.overview ?? ""}
                 features={solution.features ?? []}
                 benefits={solution.benefits ?? []}

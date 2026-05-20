@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import "./Styles/solution-content.css";
 
 interface Props {
-    title: string;
+    titleDesc:string
     overview: string;
     slug: string;
     features: string[];
@@ -10,7 +10,7 @@ interface Props {
 }
 
 export default function SolutionContent({
-    title,
+    titleDesc,
     overview,
     features,
     benefits,
@@ -20,7 +20,7 @@ export default function SolutionContent({
             <div className="solution-content-container">
                 {/* LEFT */}
                 <div className="solution-left">
-                    <h2>{title}</h2>
+                    <h2>{titleDesc}</h2>
                     <p className="solution-overview">{overview}</p>
 
                     <h3 className="solution-subtitle">Tính năng chính</h3>

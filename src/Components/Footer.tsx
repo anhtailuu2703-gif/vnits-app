@@ -40,8 +40,8 @@ export default function Footer() {
             <h4>Giải pháp</h4>
 
             <ul>
-              <li className="footer-item"><Link to="/system/it-infrastructure">Hạ tầng CNTT</Link></li>
-              <li><Link to="/system/cctv">Hệ thống CCTV</Link></li>
+              <li className="footer-item"><Link to="/system/ha-tang-cntt">Hạ tầng CNTT</Link></li>
+              <li><Link to="/system/he-thong-cctv">Hệ thống CCTV</Link></li>
               <li><Link to="/system/access-control">Access Control</Link></li>
               <li><Link to="/system/video-door-phone">Video Door Phone</Link></li>
               <li><Link to="/system/car-parking">Car Parking</Link></li>
@@ -55,9 +55,9 @@ export default function Footer() {
             <h4>Liên hệ</h4>
 
             <div className="contact-info">
-              <p>Tòa nhà ITS, Quận 1, TP.HCM</p>
-              <p>contact@its-solutions.vn</p>
-              <p>+84 123 456 789</p>
+              <p>Số 1 Nguyễn Thông, P.Nhiêu Lộc, TP.HCM</p>
+              <p>admin@its-solutions.vn</p>
+              <p>(+84)0765081898</p>
             </div>
 
             {/* GOOGLE MAP */}

@@ -25,8 +25,9 @@ export type Solution = {
 const solutionsData: Solution[] = [
   {
     title: "Hạ tầng CNTT",
+    titledesc: "Tổng quan về giải pháp",
     slug: "ha-tang-cntt",
-    desc: "Giải pháp mạng nội bộ, máy chủ và lưu trữ.",
+    desc: "Giải pháp mạng nội bộ, máy chủ và hệ thống lưu trữ toàn diện, tối ưu hoá hiệu suất cho doanh nghiệp.",
     image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31",
     icon: "server",
     items: [
@@ -51,6 +52,7 @@ const solutionsData: Solution[] = [
   },
   {
     title: "Hệ thống CCTV",
+    titledesc: "Tổng quan về giải pháp",
     slug: "he-thong-cctv",
     desc: "Giám sát an ninh 24/7 với camera AI độ nét cao, nhận diện khuôn mặt và cảnh báo xâm nhập thời gian thực.",
     image: "https://images.unsplash.com/photo-1557597774-9d273605dfa9",
@@ -72,7 +74,8 @@ const solutionsData: Solution[] = [
       "Nâng cao mức độ an ninh cho tòa nhà",
       "Phản ứng kịp thời với các sự cố",
       "Bằng chứng video rõ nét khi cần thiết",
-      "Quản lý tập trung nhiều địa điểm",],
+      "Quản lý tập trung nhiều địa điểm",
+    ],
   },
   {
     title: "Access Control",

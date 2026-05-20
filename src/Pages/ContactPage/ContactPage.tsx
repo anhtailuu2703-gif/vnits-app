@@ -49,7 +49,7 @@ export default function ContactPage() {
             setLoading(true);
 
             await emailjs.send(
-                "YOUR_SERVICE_ID",
+                "admin@vnits.net",
                 "YOUR_TEMPLATE_ID",
                 form,
                 "YOUR_PUBLIC_KEY"
@@ -85,9 +85,9 @@ export default function ContactPage() {
                     </p>
 
                     <div className="contact-info">
-                        <p>📍 TP.HCM</p>
-                        <p>📞 0909 999 999</p>
-                        <p>✉️ contact@vnits.vn</p>
+                        <p>📍 1 Nguyễn Thông P.Nhiêu Lộc TP.HCM</p>
+                        <p>📞 (+84)0765081898</p>
+                        <p>✉️ admin@vnits.vn</p>
                     </div>
                 </div>
 
