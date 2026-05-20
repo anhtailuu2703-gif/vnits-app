@@ -50,9 +50,9 @@ const solutionsData: Solution[] = [
     ],
   },
   {
-    title: "CCTV",
-    slug: "cctv",
-    desc: "Camera AI giám sát 24/7.",
+    title: "Hệ thống CCTV",
+    slug: "he-thong-cctv",
+    desc: "Giám sát an ninh 24/7 với camera AI độ nét cao, nhận diện khuôn mặt và cảnh báo xâm nhập thời gian thực.",
     image: "https://images.unsplash.com/photo-1557597774-9d273605dfa9",
     icon: "camera",
     items: [

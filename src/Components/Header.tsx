@@ -23,7 +23,7 @@ const Header: React.FC = () => {
             <span>Giải pháp ▾</span>
             <div className="dropdown-menu">
               <Link to="/system/ha-tang-cntt">Hạ tầng CNTT</Link>
-              <Link to="/system/cctv">Hệ thống CCTV</Link>
+              <Link to="/system/he-thong-cctv">Hệ thống CCTV</Link>
               <Link to="/system/access-control">Access Control</Link>
               <Link to="/system/video-door-phone">Video Door Phone</Link>
               <Link to="/system/car-parking">Car Parking</Link>
