@@ -11,14 +11,14 @@ const Header: React.FC = () => {
       <div className="container">
         {/* Logo */}
         <div className="logo">
-          <Link to="/">
+          <Link to="/vnits">
             <img src={LogoItem} alt="VNITS Logo" className="logo-icon" />
           </Link>
         </div>
 
         {/* Menu */}
         <nav className={`nav ${open ? "active" : ""}`}>
-          <Link to="/">Trang chủ</Link>
+          <Link to="/vnits">Trang chủ</Link>
           <div className="dropdown">
             <span>Giải pháp ▾</span>
             <div className="dropdown-menu">
